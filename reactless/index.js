@@ -3,7 +3,7 @@ const main = () => {
   const data = localStorage.getItem('list-names');
   const listNames = document.createElement('list-names');
   listNames.data = JSON.parse(data);
-  listNamesDiv.append(listNames);
+  listNamesDiv.append(listNames, document.createElement('new-list'));
   console.log(listNames.shadowRoot)
 }
 main();
