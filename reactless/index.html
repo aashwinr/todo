@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Notebook</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/interactjs/dist/interact.min.js" defer></script>
+  <script src="./components/ListNames.js" defer></script>
+  <script src='./components/NewList.js' defer></script>
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <nav>
+      <header class="page-header">
+        <h2>Todo List</h2>
+      </header>
+    </nav>
+    <div class="todo-items">
+      <section class="lists resizable">
+        <header class="lists-header">
+          <h3 class="lists-title">Lists</h3>
+        </header>
+      </section>
+      <section class="current-list">
+        <header class="current-list-header">
+          <input class="current-list-title" value="Groceries">
+          <button class="delete-button"><img src='./assets/images/delete-button.svg' alt='delete-list'></button>
+        </header>
+        <div class="current-list-items">
+          <ul>
+            <li class="current-list-item"><input type='checkbox' class="current-list-item-checkbox"><input class="current-list-task" type="text" value="Cabbages"></li>
+            <li class="current-list-item"><input type='checkbox' class="current-list-item-checkbox"><input class="current-list-task" type="text" value="Beans"></li>
+            <li class="current-list-item"><input type='checkbox' class="current-list-item-checkbox"><input class="current-list-task" type="text" value="Chicken"></li>
+            <li class="current-list-item"><input type='checkbox' class="current-list-item-checkbox"><input class="current-list-task" type="text" value="Milk"></li>
+            <li class="current-list-item"><input type='checkbox' class="current-list-item-checkbox"><input class="current-list-task" type="text" value="Eggs"></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
