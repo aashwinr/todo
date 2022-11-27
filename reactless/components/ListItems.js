@@ -1,3 +1,0 @@
-class ListItems extends HTMLElement {
-	
-}
